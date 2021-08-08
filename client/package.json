@@ -1,0 +1,47 @@
+{
+  "name": "safe-generator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/styled": "^11.3.0",
+    "@hocuspocus/transformer": "^1.0.0-alpha.13",
+    "@supabase/supabase-js": "^1.21.0",
+    "@tiptap/extension-character-count": "^2.0.0-beta.13",
+    "@tiptap/extension-code": "^2.0.0-beta.15",
+    "@tiptap/extension-collaboration": "^2.0.0-beta.20",
+    "@tiptap/extension-collaboration-cursor": "^2.0.0-beta.21",
+    "@tiptap/extension-highlight": "^2.0.0-beta.15",
+    "@tiptap/extension-task-item": "^2.0.0-beta.17",
+    "@tiptap/extension-task-list": "^2.0.0-beta.17",
+    "@tiptap/extension-typography": "^2.0.0-beta.13",
+    "@tiptap/react": "^2.0.0-beta.55",
+    "@tiptap/starter-kit": "^2.0.0-beta.89",
+    "next": "11.0.1",
+    "pdfmake": "^0.2.2",
+    "react": "17.0.2",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-contenteditable": "^3.3.5",
+    "react-dom": "17.0.2",
+    "react-grid-layout": "^1.2.5",
+    "react-smooth-dnd": "^0.11.1",
+    "sass": "^1.37.5",
+    "uuid": "^8.3.2",
+    "y-indexeddb": "^9.0.6",
+    "y-websocket": "^1.3.16"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.15",
+    "autoprefixer": "^10.3.1",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.0.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7",
+    "typescript": "4.3.5"
+  }
+}

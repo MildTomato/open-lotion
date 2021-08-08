@@ -1,0 +1,100 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+.blocks-container h1 {
+  @apply relative text-3xl mb-6;
+}
+
+.blocks-container p {
+  @apply relative mb-4;
+}
+
+.blocks-container:focus-visible {
+  /* @apply outline-none; */
+}
+.content-editable:focus-visible {
+  /* @apply outline-none; */
+}
+
+.content-editable {
+  @apply bg-gray-100;
+}
+
+/* Basic editor styles */
+.ProseMirror {
+  > * + * {
+    margin-top: 0.75em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.1;
+  }
+
+  // code {
+  //   background-color: rgba(#616161, 0.1);
+  //   color: #616161;
+  // }
+
+  code {
+    @apply text-sm bg-gray-100 border border-solid border-gray-200 px-1 rounded-sm;
+  }
+}
+
+/* Color swatches */
+.color {
+  white-space: nowrap;
+
+  &::before {
+    content: " ";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    vertical-align: middle;
+    margin-right: 0.1em;
+    margin-bottom: 0.15em;
+    border-radius: 4px;
+    background-color: var(--color);
+  }
+}
+
+// collab cursor
+.collaboration-cursor__caret {
+  @apply absolute;
+
+  .collaboration-cursor__label {
+    @apply text-xs py-1 px-2 rounded-md text-gray-600;
+  }
+}
+
+a {
+  @apply transition-all hover:text-gray-900 underline;
+}
+
+.ProseMirror {
+  outline: none;
+}
